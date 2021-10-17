@@ -227,8 +227,6 @@ body {
   position: relative;
   height: 50rem; }
   .tour-card__side {
-    color: #fff;
-    font-size: 2rem;
     height: 50rem;
     transition: all .8s ease;
     position: absolute;
@@ -237,6 +235,7 @@ body {
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .tour-card__side--front {
       background-color: #fff; }
@@ -245,9 +244,48 @@ body {
       .tour-card__side--back-1 {
         background-image: linear-gradient(to bottom right, #ffb900, #ff7730); }
   .tour-card:hover .tour-card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .tour-card:hover .tour-card__side--back {
     transform: rotateY(0deg); }
+  .tour-card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .tour-card__picture--1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../img/nat-5.jpg); }
+    .tour-card__picture--2 {
+      background-image: url(../../img/nat-5.jpg); }
+    .tour-card__picture--3 {
+      background-image: url(../../img/nat-5.jpg); }
+  .tour-card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
+  .tour-card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone; }
+    .tour-card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+  .tour-card__details {
+    padding: 3rem; }
+    .tour-card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .tour-card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .tour-card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
 
 .header {
   height: 95vh;
@@ -255,6 +293,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   .header__logo-container {
     position: absolute;
