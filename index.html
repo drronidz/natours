@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="sass/layout/_footer.scss"/>
-        <link rel="stylesheet" type="text/css" href="sass/layout/_header.scss"/>
-        <link rel="stylesheet" type="text/css" href="sass/components/_form.scss"/>
-        <link rel="stylesheet" type="text/css" href="sass/components/_bg-video.scss"/>
-        <link rel="stylesheet" type="text/css" href="sass/components/_tour-card.scss"/>
-        <link rel="stylesheet" type="text/css" href="sass/components/_composition.scss"/>
-        <link rel="stylesheet" type="text/css" href="sass/components/_button.scss"/>
-        <link rel="stylesheet" type="text/css" href="sass/base/_utils.scss"/>
-        <link rel="stylesheet" type="text/css" href="sass/base/_typography.scss"/>
-        <link rel="stylesheet" type="text/css" href="sass/pages/_home.scss"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -23,6 +12,20 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navigation-toggle">
+            <label for="navigation-toggle" class="navigation__button">MENU</label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natous</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benfits</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now!</a></li>
+                </ul>
+            </nav>
+        </div>
         <header class="header">
             <div class="header__logo-container">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -35,7 +38,6 @@
                 <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
         </header>
-
         <main>
             <section class="section-about">
                 <div class="u-center-text u-margin-bottom-big">
