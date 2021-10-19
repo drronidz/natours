@@ -966,4 +966,5 @@ body {
         width: 65%; } }
     @media (max-width: 56.25em) {
       .book__form {
-        width: 100%; } }
+        width: 100%;
+        padding: 3rem 4rem 3rem 2rem; } }
