@@ -1,2 +1,2 @@
 # natours
-Advanced CSS and Sass Flexbox, Grid, Animations and More (Full Project)
+Advanced CSS and Sass Project using : FLOAT LAYOUTS for Responsive Design
