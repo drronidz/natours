@@ -8,7 +8,27 @@
 
 html {
   // This defines what 1rem is
-  font-size: 62.5%;
+
+  font-size: 62.5%; // 1rem = 10px
+
+
+
+
+  @include responsive(tablet-land) { // width < 1200?
+    font-size: 56.25%; // 1 rem ==> 8px, 9/16 = 56.25%
+  }
+
+  @include responsive(tablet-port) { // width < 900?
+    font-size: 50%; // 1 rem ==> 8px, 8/16 = 50%
+  }
+
+  //@include responsive(phone) {
+  //  font-size: 35%; // 1rem ==> 5.6px, 12/60 = 75%
+  //}
+
+  @include responsive(big-desktop) {
+    font-size: 75%; // 1rem ==> 12px, 12/60 = 75%
+  }
 }
 
 body {
