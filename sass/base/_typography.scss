@@ -13,6 +13,8 @@ body {
   backface-visibility: hidden;
   margin-bottom: 50px;
 
+
+
   &--main {
     display: block;
     font-size: 60px;
@@ -21,6 +23,11 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
+
+    @include responsive(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
 
     /*
     animation-delay: 3s;
@@ -37,6 +44,10 @@ body {
     /*animation-name: moveInRight;*/
     /*animation-duration: 1.5s;*/
     /*animation-timing-function: ease-out;*/
+
+    @include responsive(phone) {
+      letter-spacing: .5rem;
+    }
   }
 }
 
@@ -50,6 +61,14 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all .2s;
+
+  @include responsive(tablet-port) { // width < 900?
+    font-size: 3rem;
+  }
+
+  @include responsive(phone) {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     transform: skewY(5deg) skewX(8deg) scale(1.1);

@@ -36,6 +36,8 @@ $breakpoint argument choices:
 
 The best is not "px" or "Rem" , the best is "em"
 1em = 16px
+
+Order: Base + typography > general layout + grid > page layout > components
 */
 @mixin responsive($breakpoint) {
   @if $breakpoint == phone {

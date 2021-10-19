@@ -11,9 +11,6 @@ html {
 
   font-size: 62.5%; // 1rem = 10px
 
-
-
-
   @include responsive(tablet-land) { // width < 1200?
     font-size: 56.25%; // 1 rem ==> 8px, 9/16 = 56.25%
   }
@@ -33,4 +30,9 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include responsive(tablet-port) { // width < 900?
+    padding: 0 !important;
+  }
 }
